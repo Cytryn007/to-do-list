@@ -106,7 +106,7 @@ Task.prototype.create = function () {
     this.list.appendChild(element);
 }
 
-data = JSON.parse(localStorage.getItem('data'));
+data = JSON.parse(localStorage.getItem('data')) || [];
 
 data.forEach(function (list) {
     new TasksList(list.listId);
