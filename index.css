@@ -1,0 +1,77 @@
+body {
+    background-color: darkgray;
+}
+.list {
+    width: 25%;
+    min-height: 75vh;
+    background-color: beige;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 5px solid #222;
+    /* outline: 5px solid #ccc; */
+    box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, .5);
+    font-family: sans-serif;
+    list-style: none;
+}
+.headline {
+    text-align: center;
+    font-family: sans-serif;
+}
+.list li {
+    border-bottom: 1px dotted #aaaccc;
+    line-height: 1.8;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: green;
+}
+.list input[type="checkbox"]:checked ~ span {
+    text-decoration: line-through;
+}
+.list span {
+    margin-right: auto;
+    margin-left: 10px;
+}
+.list input[type="checkbox"] {
+    display: none;
+}
+.list label {
+    display: flex;
+
+    height: 15px;
+    width:  15px;
+    border-radius: 50%;
+    border: 2px solid #222;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.list input[type='checkbox']:checked ~ label::before {
+    content: '✓';
+}
+.button {
+    background-color: green;
+    margin:auto;
+    display: block;
+
+}
+.list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.add-new-list {
+    background-color: cornflowerblue;
+    border: 0;
+    /* usunięcie ramki */
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.add-new-list:hover {
+    background: cadetblue;
+}
